@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VenteModelStoreContainer" CdmEntityContainer="VenteEntities">
+    <EntitySetMapping Name="Articles">
+      <EntityTypeMapping TypeName="VenteModel.Article">
+        <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="CodeArt" ColumnName="CodeArt" />
+          <ScalarProperty Name="Desi" ColumnName="Desi" />
+          <ScalarProperty Name="PU" ColumnName="PU" />
+          <ScalarProperty Name="Qdisp" ColumnName="Qdisp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="VenteModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="CodeCl" ColumnName="CodeCl" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Ville" ColumnName="Ville" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commandes">
+      <EntityTypeMapping TypeName="VenteModel.Commande">
+        <MappingFragment StoreEntitySet="Commande">
+          <ScalarProperty Name="NumCom" ColumnName="NumCom" />
+          <ScalarProperty Name="DateCom" ColumnName="DateCom" />
+          <ScalarProperty Name="CodeCl" ColumnName="CodeCl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Details">
+      <EntityTypeMapping TypeName="VenteModel.Detail">
+        <MappingFragment StoreEntitySet="Detail">
+          <ScalarProperty Name="NumCom" ColumnName="NumCom" />
+          <ScalarProperty Name="CodeArt" ColumnName="CodeArt" />
+          <ScalarProperty Name="Qte" ColumnName="Qte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

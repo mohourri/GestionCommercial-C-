@@ -1,0 +1,16 @@
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\bin\Debug\GestionCommerciale-EF-TDI2A.exe.config
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\bin\Debug\GestionCommerciale-EF-TDI2A.exe
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\bin\Debug\GestionCommerciale-EF-TDI2A.pdb
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\bin\Debug\EntityFramework.dll
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\bin\Debug\EntityFramework.SqlServer.dll
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\bin\Debug\EntityFramework.xml
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\bin\Debug\EntityFramework.SqlServer.xml
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale-EF-TDI2A.csprojAssemblyReference.cache
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale_EF_TDI2A.MajClient.resources
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale_EF_TDI2A.Properties.Resources.resources
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale-EF-TDI2A.csproj.GenerateResource.cache
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale-EF-TDI2A.csproj.CoreCompileInputs.cache
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale-EF-TDI2A.csproj.CopyComplete
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale-EF-TDI2A.exe
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale-EF-TDI2A.pdb
+F:\TDI 2 - 2019-2020\Travaux CSharp - VS 2017 - Octobre 2019\GestionCommerciale-EF-TDI2A\GestionCommerciale-EF-TDI2A\obj\Debug\GestionCommerciale_EF_TDI2A.MajClient_SansBS.resources

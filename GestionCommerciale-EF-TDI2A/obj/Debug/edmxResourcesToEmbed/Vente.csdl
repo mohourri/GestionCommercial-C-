@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VenteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="CodeArt" />
+    </Key>
+    <Property Name="CodeArt" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Desi" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PU" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Qdisp" Type="Int32" />
+    <NavigationProperty Name="Details" Relationship="Self.FK__Detail__CodeArt__1920BF5C" FromRole="Article" ToRole="Detail" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="CodeCl" />
+    </Key>
+    <Property Name="CodeCl" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nom" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ville" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Commandes" Relationship="Self.FK__Commande__CodeCl__15502E78" FromRole="Client" ToRole="Commande" />
+  </EntityType>
+  <EntityType Name="Commande">
+    <Key>
+      <PropertyRef Name="NumCom" />
+    </Key>
+    <Property Name="NumCom" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DateCom" Type="DateTime" Precision="0" />
+    <Property Name="CodeCl" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK__Commande__CodeCl__15502E78" FromRole="Commande" ToRole="Client" />
+    <NavigationProperty Name="Details" Relationship="Self.FK__Detail__NumCom__182C9B23" FromRole="Commande" ToRole="Detail" />
+  </EntityType>
+  <EntityType Name="Detail">
+    <Key>
+      <PropertyRef Name="NumCom" />
+      <PropertyRef Name="CodeArt" />
+    </Key>
+    <Property Name="NumCom" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodeArt" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Qte" Type="Int32" />
+    <NavigationProperty Name="Article" Relationship="Self.FK__Detail__CodeArt__1920BF5C" FromRole="Detail" ToRole="Article" />
+    <NavigationProperty Name="Commande" Relationship="Self.FK__Detail__NumCom__182C9B23" FromRole="Detail" ToRole="Commande" />
+  </EntityType>
+  <Association Name="FK__Detail__CodeArt__1920BF5C">
+    <End Role="Article" Type="Self.Article" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Detail" Type="Self.Detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="CodeArt" />
+      </Principal>
+      <Dependent Role="Detail">
+        <PropertyRef Name="CodeArt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commande__CodeCl__15502E78">
+    <End Role="Client" Type="Self.Client" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Commande" Type="Self.Commande" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="CodeCl" />
+      </Principal>
+      <Dependent Role="Commande">
+        <PropertyRef Name="CodeCl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Detail__NumCom__182C9B23">
+    <End Role="Commande" Type="Self.Commande" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Detail" Type="Self.Detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commande">
+        <PropertyRef Name="NumCom" />
+      </Principal>
+      <Dependent Role="Detail">
+        <PropertyRef Name="NumCom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="VenteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Articles" EntityType="Self.Article" />
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="Commandes" EntityType="Self.Commande" />
+    <EntitySet Name="Details" EntityType="Self.Detail" />
+    <AssociationSet Name="FK__Detail__CodeArt__1920BF5C" Association="Self.FK__Detail__CodeArt__1920BF5C">
+      <End Role="Article" EntitySet="Articles" />
+      <End Role="Detail" EntitySet="Details" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commande__CodeCl__15502E78" Association="Self.FK__Commande__CodeCl__15502E78">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Commande" EntitySet="Commandes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Detail__NumCom__182C9B23" Association="Self.FK__Detail__NumCom__182C9B23">
+      <End Role="Commande" EntitySet="Commandes" />
+      <End Role="Detail" EntitySet="Details" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
